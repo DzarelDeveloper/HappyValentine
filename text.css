@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+body {
+  background: #212121;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+svg path.linear-1 {
+  stroke: white;
+  filter: url(#blur-filter);
+}
+
+.loading {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.loading svg {
+  height: 100%;
+}
+
+.loading .linear-1 {
+  stroke-dasharray: 281;
+  animation: dash 6s infinite linear forwards;
+}
+
+.loading .linear-2 {
+  stroke-dasharray: 300;
+  animation: dash 5s infinite linear forwards;
+}
+
+.loading .linear-3 {
+  stroke-dasharray: 340;
+  animation: dash 4s infinite linear forwards;
+}
+
+.loading .linear-4 {
+  stroke-dasharray: 400;
+  animation: dash 3s infinite linear forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 814;
+  }
+  to {
+    stroke-dashoffset: -814;
+  }
+}
+
+h1 {
+  text-shadow: 2px 2px 5px #E21393;
+}
+
+a,
+h3 {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F97DC4;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
